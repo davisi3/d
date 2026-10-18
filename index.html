@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laipni lūdzam!</title>
+    <style>
+        /* Globālie stili un krāsas */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigācija */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Galvenā sekcija (Hero) */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 80vh;
+            background: linear-gradient(135deg, #e0f2fe 0%, #0284c7 100%);
+            padding: 120px 20px 60px 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            color: #0f172a;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            color: #334155;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #1e293b;
+            transform: translateY(-2px);
+        }
+
+        /* Iespēju / Funkciju sekcija */
+        .features {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+
+        /* Kājene (Footer) */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        /* Adaptīvais dizains */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigācijas josla -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">MansZīmols</div>
+            <nav>
+                <ul>
+                    <li><a href="#files">Faili</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Galvenā iepazīstināšanas daļa (Hero) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Laipni lūdzam mūsu vietnē!</h1>
+            <p>Mēs palīdzam pārvērst jūsu idejas realitātē. Izpētiet mūsu pakalpojumus un uzziniet, kā mēs varam sadarboties jau šodien.</p>
+            <a href="#files" class="btn">Skatīt failus</a>
+        </div>
+    </section>
+
+    <!-- Funkciju / Priekšrocību sadaļa -->
+    <section id="files" class="features">
+        <div class="feature-card">
+            <h3>⚡ Ātrums</h3>
+            <p>Mūsu risinājumi ir optimizēti maksimālai veiktspējai un ātrai darbībai.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🎨 Dizains</h3>
+            <p>Mūsdienīgs, tīrs un lietotājam draudzīgs vizuālais izpildījums katrai ierīcei.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔒 Drošība</h3>
+            <p>Jūsu datu aizsardzība un drošība ir mūsu galvenā prioritāte.</p>
+        </div>
+    </section>
+
+    <!-- Kājene -->
+    <footer>
+        <p>&copy; 2026 MansZīmols. Visas tiesības aizsargātas.</p>
+    </footer>
+
+</body>
+</html>
